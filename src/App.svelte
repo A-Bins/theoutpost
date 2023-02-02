@@ -2,13 +2,12 @@
 </script>
 
 <main>
-		<div class="menubar">
-			<img src="/copied_icon_40px.png" class="logo" alt="logo" />
-		<!-- <a href="https://vitejs.dev" target="_blank" rel="noreferrer">  -->
-					
-		<!-- </a> -->
+		<div class="menubar bg(#FFFFFF)">
+			<!-- <a href="https://discord.gg/r9pMV9kHAy" target="_blank" rel="noreferrer"> -->
+				<img src="/copied_icon_40px.png" class="logo" alt="logo" />
+			<!-- </a>	 -->
 		</div>
-	<h1 >The Outpost</h1>
+	<h1 class="relative top(100px)">The Outpost</h1>
 
 	<!-- <div class="card"> -->
 		<!-- <Counter /> -->
@@ -18,11 +17,13 @@
 
 <style>
 	.menubar { 
+		filter: drop-shadow(0 0 2em #000000);
 		position: relative;
   	top: 0;
+		/* background: #000; */
   	left: 0;
   	right: 0;
-		height: 60px;
+		height: 50px;
 		width: 100%;
 		display: flex;
 		color: aqua;
@@ -30,15 +31,16 @@
 		justify-content: space-around;
 	}
 	.logo {
-		height: 50px;
+		height: 60px;
 		position: absolute;
+		top: 20px;
 		/* 최상단으로부터 20px 떨어져있음 */
 		/* bottom: 300px; */
 
-		will-change: filter;
+		/* will-change: filter; */
 	}
 	.logo:hover {
-		filter: drop-shadow(0 0 2em #646cffaa);
+		filter: drop-shadow(0 0 1em #a0a0a0);
 	}
 	/* .click-to-discord {
 		color: #888;
